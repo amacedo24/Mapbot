@@ -13,7 +13,6 @@ client.on("message", async message => {
         
 
 	
-	
 	if(command == '!map'){
 		var gyminput = args.join(" ").toLowerCase();
 		var gymdb = gyms.gym;
