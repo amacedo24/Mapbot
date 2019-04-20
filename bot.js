@@ -32,10 +32,10 @@ client.on("message", async message => {
  	}
 	
 	if(command == '!team'){
-		var role = args.shift();
+		var role = args.shift().toLowerCase();
 		var member = message.member;
 
-		
+		console.log("Test team");
 		switch(role){
             case 'valor':
 				role = message.guild.roles.find(r => r.name === "Valor");
