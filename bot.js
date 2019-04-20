@@ -33,11 +33,11 @@ client.on("message", async message => {
  	}
 	
 	if(command == '!team'){
-		var role;
-		var member = message.mentions.members.first();
+		var role = args.shift();
+		var member = message.member;
 
 		
-		switch(badge){
+		switch(role){
             case 'valor':
 				role = message.guild.roles.find(r => r.name === "Valor");
 				break;
