@@ -47,7 +47,7 @@ client.on("message", async message => {
 				role = message.guild.roles.find(r => r.name === "Instinct");
 				break;
             default:
-				message.channel.send('Team not Found! Please try joining Valor, Mystic or Instinct. ex.!team Valor' );
+				message.channel.send('Team not Found! Please try joining Valor, Mystic or Instinct. ex.``!team Valor``' );
 				return;
           }
 		  
